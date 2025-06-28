@@ -55,7 +55,12 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-ALLOWED_HOSTS = ['library-app.onrender.com']
+ALLOWED_HOSTS = [
+    'library-management-wgdf.onrender.com',  
+    '127.0.0.1',
+    'localhost'
+]
+
 ROOT_URLCONF = 'library.urls'
 
 TEMPLATES = [
