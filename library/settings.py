@@ -55,11 +55,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-ALLOWED_HOSTS = [
-    'library-management-wgdf.onrender.com',  
-    '127.0.0.1',
-    'localhost'
-]
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
 
 ROOT_URLCONF = 'library.urls'
 
