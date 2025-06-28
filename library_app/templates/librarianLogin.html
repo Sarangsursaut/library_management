@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}  
+  {% if error %}<p style="color:red;">{{ error }}</p>{% endif %}  
+  <h2>libranian LOgin</h2>
+  <form method="post">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="username"><br><br>
+    <input type="password" name="password" placeholder="password"><br><br>
+    <button type="submit">LOGIN</button>
+      <a href="{% url 'librarian_register' %}">Register as Librarian</a>
+  </form>
+{% endblock %}

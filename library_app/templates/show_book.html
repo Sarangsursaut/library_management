@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+  {%if books %}
+  <h2>All Books in Library</h2>
+  <table>
+    <tr>
+      <th>Book ID</th>
+      <th>Title</th>
+      <th>Author</th>
+    </tr>
+    {%for book in books%}
+    <tr>
+      <td>{{book.book_id}}</td>
+      <td>{{book.title}}</td>
+      <td>{{book.author}}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    {%else%}
+        <p> no books avaliable in the library</p>
+    {%endif%}
+{% endblock %}  
