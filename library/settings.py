@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-$n_teiynryte#8@+!d@a*og-k94((=_ar&z!1y!!w-(_6-!11i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['library-management-wgdf.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
