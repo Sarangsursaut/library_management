@@ -55,7 +55,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-ALLOWED_HOSTS = ['*']
+
 
 ROOT_URLCONF = 'library.urls'
 
